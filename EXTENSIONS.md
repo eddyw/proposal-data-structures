@@ -57,9 +57,9 @@ An example using bitwise flags:
 struct enum Status {
   #_IOTA = iota();
   Unknown;    // = this.#_IOTA(undefined, 0) // 0
-  New;        // = this.#_IOTA(undefined, 1) // 1 << 1
-  Dirty;      // = this.#_IOTA(undefined, 2) // 1 << 2
-  Saved;      // = this.#_IOTA(undefined, 3) // 1 << 3
+  New;        // = this.#_IOTA(undefined, 1) // 1 << 0
+  Dirty;      // = this.#_IOTA(undefined, 2) // 1 << 1
+  Saved;      // = this.#_IOTA(undefined, 3) // 1 << 2
 }
 function iota {
   let lastIndex = 0;
